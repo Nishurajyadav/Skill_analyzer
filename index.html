@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Gap Analyzer - Home</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">Skill Gap Analyzer</div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Analyzer</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="resources.html">Learning Portal</a></li>
+    </ul>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+    <div class="card">
+        <h1>Bridge the Gap Between Skills & Success</h1>
+        <p style="color:#94a3b8; margin-bottom:20px;">Analyze your current skills against top job profiles.</p>
+
+        <div class="form-group">
+            <label for="role">Select Target Role:</label>
+            <select id="role">
+                <option value="Web Developer">Web Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="skills">Enter Your Current Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="e.g. Python, HTML & CSS">
+        </div>
+
+        <button type="button" onclick="runAnalysis()">Analyze Gap</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="resultsCard" class="card" style="display: none;">
+        <h2>Gap Detection Result</h2>
+        <h3 style="margin-top:10px;">Skill Match Score: <span id="matchScore" style="color:#4ade80;">0%</span></h3>
+        <h4 style="margin-top:15px;">Missing Skills:</h4>
+        <ul id="missingList" class="skill-list"></ul>
+    </div>
+</div>
+c
+<!-- JavaScript File Link -->
+<script src="script.js"></script>
+</body>
+</html>
